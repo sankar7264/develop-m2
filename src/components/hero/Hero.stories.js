@@ -151,3 +151,18 @@ HeroLevel3.args = {
     },
   },
 }
+
+export const HeroLevel1Image = Template.bind({})
+HeroLevel1Image.args = {
+  data: {
+    hero: {
+      page_level: 'page_level_1',
+      heading: 'Place Name Lorem Ipsum Dolor',
+      sub_heading:
+        'Baker Beach is one of San Francisco’s best beaches, offering a sandy shore and views of Golden Gate Bridge.',
+      image: {
+        url: 'https://media.istockphoto.com/id/895294158/photo/golden-gate-bridge-view-from-the-presidio.jpg?s=612x612&w=0&k=20&c=PYlYKhfz4xvvBbnVDjR4wH8NrRW4m7bGC9GcByfkSPQ=',
+      },
+    },
+  },
+}

@@ -12,8 +12,13 @@ const LevelType = {
 }
 
 const useStyles = makeStyles()((defaultTheme, props) => {
-  const { page_level, background_color, image, graphic_pattern, breadcrumbs } =
-    props
+  const {
+    page_level,
+    background_color,
+    imageUrl,
+    graphic_pattern,
+    breadcrumbs,
+  } = props
 
   let height
   let backgroundImage
@@ -29,8 +34,8 @@ const useStyles = makeStyles()((defaultTheme, props) => {
     height = rem(576)
   }
 
-  if (image) {
-    backgroundImage = `url(${image.url})`
+  if (imageUrl) {
+    backgroundImage = `url(${imageUrl})`
   } else {
     backgroundImage = 'none'
 
@@ -144,7 +149,7 @@ export default function Hero(props) {
   const { classes } = useStyles({
     page_level,
     background_color,
-    image,
+    imageUrl: image?.url,
     graphic_pattern,
     breadcrumbs,
   })
