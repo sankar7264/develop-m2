@@ -113,7 +113,6 @@ const useStyles = makeStyles()((defaultTheme, props) => {
           : theme.palette.presidio.color.NEAR_WHITE,
     },
     heading: {
-      ...theme.typography.h1,
       marginBottom: rem(16),
       [theme.breakpoints.down('lg')]: {
         fontSize: rem(56),
