@@ -139,7 +139,9 @@ const Faq = (props) => {
     return null
   }
 
-  const { faq, title, section_id } = data
+  const { faq, section_id } = data
+
+  const { title } = faq
 
   return (
     <div className="module" id={section_id} data-id="section">
