@@ -62,10 +62,6 @@ const useStyles = makeStyles(theme)((props) => ({
     flex: 'none',
     order: '0',
     flexGrow: '0',
-    [theme.breakpoints.up('md')]: {
-      padding: '0px',
-      width: '92.5%',
-    },
     [theme.breakpoints.up('lg')]: {
       width: '55.35%',
       height: '126px',
