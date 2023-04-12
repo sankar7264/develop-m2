@@ -1,4 +1,5 @@
 import Faq from 'src/components/faq/Faq'
+import Hero from 'src/components/hero/Hero'
 import QuickLinks from 'src/components/quick-links/QuickLinks'
 import ShortDescription from 'src/components/short-description/ShortDescription'
 
@@ -6,6 +7,7 @@ const MODULES = {
   QUICK_LINKS: 'quick_links',
   SHORT_DESCRIPTION: 'short_description',
   FAQ: 'faq',
+  HERO: 'hero',
 }
 
 Object.freeze(MODULES)
@@ -20,6 +22,8 @@ export function getComponent(acf_fc_layout) {
       )
     case MODULES.FAQ:
       return ({ data }) => <Faq key={data.section_id} data={data} />
+    case MODULES.HERO:
+      return ({ data }) => <Hero key={data.section_id} data={data} />
     default:
       break
   }

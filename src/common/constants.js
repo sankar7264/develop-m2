@@ -10,3 +10,9 @@ export const COLOR_THEME = {
   CRISSY_FIELD: 'crissy_field',
   CYPRESS_GREEN: 'cypress_green',
 }
+
+export const GRAPHIC_PATTERN = {
+  BEACH_STRAWBERRY: 'beach_strawberry',
+  MANZANITA: 'manzanita',
+  PELICAN: 'pelican',
+}
